@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namastha React</title>
+</head>
+<body>
+    <div id="root">
+        <h2>Hello World !</h2>
+    </div>
+    
+    <script>
+        const heading=document.createElement("h1");// creating new html element
+        heading.innerHTML="hello world 2";// add data to it the element
+
+
+        const root=document.getElementById('root'); // then put this element inside 
+        // the parent tag usig append child method
+        root.appendChild(heading);
+    </script>
+</body>
+</html>
