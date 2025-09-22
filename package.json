@@ -1,0 +1,29 @@
+{
+  "name": "namastha-react",
+  "version": "1.0.0",
+  "description": "This is Vanakam react By Bibin",
+  "keywords": [
+    "react",
+    "vanakam",
+    "namastha",
+    "bibin"
+  ],
+  "homepage": "https://github.com/bibin123binu/HelloReact#readme",
+  "bugs": {
+    "url": "https://github.com/bibin123binu/HelloReact/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bibin123binu/HelloReact.git"
+  },
+  "license": "ISC",
+  "author": "Bibin",
+  "type": "commonjs",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.0"
+  }
+}
