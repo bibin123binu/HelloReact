@@ -16,3 +16,9 @@
 -good error handling (Diagnostic)
 -parcel give ssl (so we can use http ) 
 - tree shaking -remove unused code for you as well
+
+  "browserslist":[
+    "last 7 Chrome version",
+    "last 2 Firefox version",
+    "last 10 Edge version"
+  ]
