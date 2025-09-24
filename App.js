@@ -1,84 +1,20 @@
-/*when you did React.CreateElement() it basicaly creates an js object
-(this is a react element not actual H1 tag .not yet)*/
-const heading=React.createElement(  
-    "H1",
-    {id:"heading_id"
-    ,style:{textAlign:"center"}},
-    "Hello react Developers!");
-console.log(heading);//object
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+const parent=React.createElement("div",{id:"parent"},[
+    React.createElement("div",{id:"child"},[
+        React.createElement("h1",{},"This is the first H1 tag"),
+        React.createElement("h1",{},"This is the second H1 tag")
+    ]),
+     React.createElement("div",{id:"child2"},[
+        React.createElement("h1",{},"This is the Third H1 tag"),
+        React.createElement("h1",{},"This is the fourth H1 tag")
+    ]),
+
+])
 
 
 
-/*
-<div id="parent">
-        <div id="child">
-            <h1>I am bibin</h1>
-        </div>
-</div>
-its exact geberation using react below it
-*/
-
-
-
-// const parent=React.createElement("div",{id:"parent"},
-//     React.createElement("div",{id:"child"},
-//         React.createElement("h1",{style:{textAlign:"center"}},"i am Bibin")
-//     )
-// )
-
-
-
-
-
-/*
-<div id="parent">
-        <div id="child">
-            <h1>I am bibin</h1>
-            <h1>I am bibin</h1>
-        </div>
-</div>
-its exact geberation using react below it
-*/
-
-
-
-// const parent=React.createElement("div",{id:"parent"},
-//         React.createElement("div",{id:"child"},
-//         [React.createElement("h1",{style:{textAlign:"center"}},"i am Bibin"),
-//         React.createElement("h1",{style:{textAlign:"center"}},"i am Bibin")] // multiple child
-//     )
-// )
-
-
-
-
-
-/* <div id="parent">
-        <div id="child">
-            <h1>I am bibin</h1>
-            <h1>I am bibin</h1>
-        </div>
- </div>
- <div id="parent">
-        <div id="child">
-            <h1>I am bibin</h1>
-            <h1>I am bibin</h1>
-        </div>
- </div>
-its exact geberation using react below it
-*/
-
-
-
-const parent=[React.createElement("div",{id:"parent"},
-        React.createElement("div",{id:"child"},
-        React.createElement("h1",{style:{textAlign:"center"}},"i am Bibin 1"),
-        React.createElement("h1",{style:{textAlign:"center"}},"i am Bibin 2") // multiple child
-    )
-),React.createElement("div",{id:"parent"},
-        React.createElement("div",{id:"child"},
-        React.createElement("h1",{style:{textAlign:"center"}},"i am Bibin 3"),
-        React.createElement("h1",{style:{textAlign:"center"}},"i am Bibin 4") ))]
 
 
 
